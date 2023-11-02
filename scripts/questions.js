@@ -11,7 +11,9 @@ const clearQuestions = () => {
 weekSelector.addEventListener("change", async function (event) {
   clearQuestions();
   const week = event.target.value;
-  const response = await fetch(`http://localhost:4000/questions/${week}`);
+  const response = await fetch(
+    `https://tortee-api.onrender.com/questions/${week}`
+  );
 
   const questionJSON = await response.json();
 

@@ -7,7 +7,7 @@ async function getAndDisplayIceBreaker() {
 // Function to asynchronously retrieve data from API
 async function retrieveIceBreaker() {
   const response = await fetch(
-    "http://localhost:4000/icebreaker/conversation_starter",
+    "https://tortee-api.onrender.com/icebreaker/conversation_starter",
     {
       headers: {
         Accept: "application/json",
