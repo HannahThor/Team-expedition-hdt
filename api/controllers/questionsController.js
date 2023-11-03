@@ -1,5 +1,6 @@
 import { getQuestionsByWeek } from "../models/questionsModel.js";
 
+// function that excutes when the /questions endpoint gets hit
 export async function getQuestions(req, res) {
   const week = req.params.week;
   const questions = await getQuestionsByWeek(week);
